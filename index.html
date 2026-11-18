@@ -197,35 +197,37 @@ dev:{t:'Devre günü',sh:'Tüm',
   ['Soğuma',[['Hafif pedal','2 dk']]]]},
  pm:{t:'Bisiklet zone 2 + esneme',m:[25,30,30],b:[['Ana bölüm',[['Bisiklet, zone 2','20 dk|25 dk|25 dk','Rahat tempo; nefesin hızlanmasın.']]],['Esneme',[['Kalça ön, arka bacak, baldır','5 dk']]]]}},
 kos:{t:'Açık hava yürü-koş',sh:'Koşu',
- am:{t:'Yürü-koş, dışarıda',m:[40,40,42],tm:{w:[60,90,120],r:[120,90,90],n:[8,8,7],l:'Koş / yürü'},b:[['Isınma',[['Tempolu yürüyüş','5 dk'],['Dinamik ısınma','1 tur','Bacak sallama, diz çekme, topuk vuruşu.']]],
+ am:{t:'Yürü-koş + yürüyüş, dışarıda',m:[60,60,62],tm:{w:[60,90,120],r:[120,90,90],n:[8,8,7],l:'Koş / yürü'},b:[['Isınma',[['Tempolu yürüyüş','5 dk'],['Dinamik ısınma','1 tur','Bacak sallama, diz çekme, topuk vuruşu.']]],
   ['Ana bölüm',[['Koş / yürü','8×(1/2 dk)|8×(1,5/1,5 dk)|7×(2/1,5 dk)','Koşu konuşabileceğin kadar yavaş. Diz ya da incik ağrısında yürüyüşe dön.']]],
+  ['Ek yürüyüş',[['Tempolu yürüyüş','20 dk','Koşudan sonra durma; eve yürüyerek dön. Hafta sonu hedefi 11.500 adım.']]],
   ['Soğuma',[['Yavaş yürüyüş','5 dk'],['Baldır, ön ve arka bacak esnemesi','5 dk']]]]}},
 yur:{t:'Uzun yürüyüş',sh:'Yürü',
- am:{t:'Tempolu yürüyüş + esneme',m:[55,65,75],b:[['Ana bölüm',[['Tempolu yürüyüş','45 dk|55 dk|65 dk','Hafif nefes nefese tempo. Yokuş varsa tercih et.']]],
+ am:{t:'Tempolu yürüyüş + esneme',m:[70,80,90],b:[['Ana bölüm',[['Tempolu yürüyüş','60 dk|70 dk|80 dk','Hafif nefes nefese tempo. Yokuş varsa tercih et.']]],
   ['Esneme, 10 dk',[['Kalça ön esnemesi','45 sn','Her taraf.'],['Arka bacak esnemesi','45 sn','Her taraf.'],['Baldır esnemesi','45 sn','Her taraf.'],['Çocuk pozu','1 dk']]]]}}
 };
 const ML={
-O1:['Izgara tavuk + bulgur','180 g ızgara tavuk, 6 yemek kaşığı bulgur pilavı, bol salata (1 tatlı kaşığı yağ), ayran',680,60],
-O2:['Kuru fasulye ya da nohut','1 porsiyon etli kuru fasulye ya da nohut, 5 yemek kaşığı pilav, cacık',700,35],
-O3:['Izgara köfte','7–8 adet ızgara köfte (~180 g), piyaz ya da salata, 1 dilim ekmek, ayran',680,48],
-O4:['Ton balıklı salata','1 kutu su içinde ton balığı, 1 kase haşlanmış nohut, yeşillik, 1 yemek kaşığı zeytinyağı, 2 dilim ekmek, 150 g yoğurt',650,45],
+O1:['Izgara tavuk + bulgur','180 g ızgara tavuk, 3 yemek kaşığı bulgur pilavı, bol salata (1 tatlı kaşığı yağ), ayran',580,58],
+O2:['Kuru fasulye ya da nohut','1 porsiyon etli kuru fasulye ya da nohut, 3 yemek kaşığı pilav, cacık, ayran',690,40],
+O3:['Izgara köfte','7–8 adet ızgara köfte (~180 g), piyaz ya da salata, ayran; ekmek yok',600,46],
+O4:['Ton balıklı salata','1 kutu su içinde ton balığı, 1 kase haşlanmış nohut, yeşillik, 1 yemek kaşığı zeytinyağı, 1 dilim ekmek, 150 g yoğurt',570,43],
 O5:['Tavuk dürüm','1 tam buğday lavaş, 150 g tavuk, yeşillik, yoğurtlu sos; salata ve ayran',620,48],
-A1:['Yoğurt + meyve','200 g süzme yoğurt, 1 elma, 10 badem',330,20],
-A2:['Lor tabağı','150 g lor, 2 tam buğday galeta, domates-salatalık',230,19],
+I1:['Protein shake + muz','1 ölçek whey + 300 ml süt + 1 muz + 10 badem. Whey yoksa 200 g lor + 1 muz',430,37],
+I2:['Yoğurt + muz + yulaf','200 g süzme yoğurt, 1 muz, 3 yemek kaşığı yulaf, tarçın',420,22],
+I3:['Yumurta tabağı','2 haşlanmış yumurta, 1 dilim tam buğday ekmek, 30 g light beyaz peynir, 1 meyve, ayran',430,28],
+I4:['Lor + meyve','150 g lor, 2 tam buğday galeta, 1 meyve, 1 bardak ayran',400,25],
+A1:['Yoğurt + meyve','200 g süzme yoğurt, 1 elma',260,18],
 A3:['Yumurta + meyve','2 haşlanmış yumurta, 1 meyve, 1 ayran',290,18],
-A4:['Kefir + fındık','300 ml kefir, 15 g fındık',270,12],
-D1:['Fırın balık','200 g levrek, çipura ya da somon; fırın sebze; 5 yemek kaşığı bulgur; salata',680,42],
+D1:['Fırın balık','200 g levrek, çipura ya da somon; fırın sebze; 4 yemek kaşığı bulgur; 150 g yoğurt',730,48],
 D2:['Tavuk sote','200 g tavuk, biber-mantar, 1 tatlı kaşığı yağ; 4 yemek kaşığı bulgur; 150 g yoğurt; salata',690,56],
-D3:['Kıymalı sebze','Ispanak, kabak ya da taze fasulye + 150 g yağsız kıyma; cacık; 2 dilim ekmek',700,42],
+D3:['Kıymalı sebze','Ispanak, kabak ya da taze fasulye + 180 g yağsız kıyma; cacık; 2 dilim ekmek',740,48],
 D4:['Çorba + ızgara tavuk','1 kase mercimek çorbası, 150 g ızgara tavuk ya da hindi, 4 yemek kaşığı bulgur, salata',690,60],
 D5:['Esnek akşam','Dışarıda ya da ailece: tek tabak, ızgara + salata, 1 dilim ekmek, tatlı yerine meyve',700,40],
-S1:['Protein shake','1 ölçek whey + 300 ml süt + 1 muz. Whey yoksa 200 g lor + 1 muz + tarçın',360,35],
-S2:['Süzme yoğurt','250 g süzme yoğurt, tarçın; istersen 1 tatlı kaşığı bal',230,22],
+S2:['Süzme yoğurt','250 g süzme yoğurt, tarçın',230,22],
 B1:['Menemen brunch','3 yumurta + 2 yumurta akı, 2 dilim tam buğday ekmek, 60 g light beyaz peynir, 5 zeytin, domates-salatalık',650,46],
 B2:['Yumurta + yulaf','3 haşlanmış yumurta, 50 g yulaf + 200 ml süt + tarçın, 1 dilim ekmek, yeşillik',650,40]};
-const MENU=[['B2','A3','D5','S2'],['O1','A1','D2','S1'],['O2','A1','D4','S2'],['O3','A4','D1','S1'],['O4','A3','D3','S1'],['O5','A1','D2','S1'],['B1','A1','D1','S2']];
-const SL=g=>g===6?['Koşu sonrası brunch · 11:00','İkindi · 16:00','Akşam · 19:30','Gece, hafif · 22:00']:g===0?['Yürüyüş sonrası brunch · 11:00','İkindi · 16:00','Akşam · 19:30','Gece, hafif · 22:00']:['Öğle · 12:30','İkindi · 16:00','Akşam · 19:00','Antrenman sonrası · 21:45'];
-const HAB=[['su','3 litre su'],['adim','8.000|8.500|9.000'],['uyku','7+ saat uyku']];
+const MENU=[['B2','A3','D5','S2'],['O1','I1','D2'],['O2','I3','D4'],['O3','I1','D1'],['O4','I1','D3'],['O5','I4','D2'],['B1','A1','D1','S2']];
+const SL=g=>g===6?['Koşu sonrası brunch · 11:00','İkindi · 16:00','Akşam · 19:30','Gece, açsan · 22:00']:g===0?['Yürüyüş sonrası brunch · 11:00','İkindi · 16:00','Akşam · 19:30','Gece, açsan · 22:00']:['Öğle · 12:30','İkindi, antrenman enerjisi · 17:00','Akşam, antrenmandan sonra · 21:10'];
+const HAB=[['su','3 litre su'],['adim','10.000'],['uyku','7+ saat uyku']];
 
 const K='g21-v1';
 const START='2026-11-19';
@@ -240,7 +242,7 @@ const info=i=>{const date=add(S.start,i-1),g=parse(date).getDay(),type=MAP[g],w=
 const D=i=>(S.days[i]=S.days[i]||{ex:{},m:[0,0,0,0],h:{}});
 const sKeys=(pl,s)=>pl[s]?pl[s].b.flatMap((b,bi)=>b[1].map((_,ii)=>s[0]+bi+'-'+ii)):[];
 const exKeys=pl=>sKeys(pl,'am').concat(sKeys(pl,'pm'));
-function pct(i){const pl=info(i).plan,d=S.days[i];if(!d)return 0;const ks=exKeys(pl);const n=ks.filter(k=>d.ex[k]).length+d.m.filter(Boolean).length+HAB.filter(h=>d.h[h[0]]).length;return n/(ks.length+7)}
+function pct(i){const f=info(i),pl=f.plan,d=S.days[i];if(!d)return 0;const ks=exKeys(pl),nm=MENU[f.g].length;const n=ks.filter(k=>d.ex[k]).length+d.m.slice(0,nm).filter(Boolean).length+HAB.filter(h=>d.h[h[0]]).length;return n/(ks.length+nm+3)}
 const ws=()=>[...S.weights].sort((a,b)=>a.d<b.d?-1:1);
 const lastW=()=>{const a=ws();return a.length?a[a.length-1].kg:98};
 const firstW=()=>{const a=ws();if(!a.length)return 98;const b=a.filter(x=>x.d<=S.start);return(b.length?b[b.length-1]:a[0]).kg};
@@ -269,9 +271,9 @@ function vToday(){
   <div class="btns"><button class="btn hot" data-act="tgo" id="tgo">Başlat</button><button class="btn" data-act="treset">Sıfırla</button></div></section>`:'';
  const sl=SL(f.g);
  const meals=MENU[f.g].map((m,mi)=>{const x=ML[m];return`<label class="row"><input type="checkbox" data-m="${mi}" ${d.m[mi]?'checked':''}><span class="box"></span><span class="txt"><small class="sl">${sl[mi]}</small><b>${x[0]}</b><small>${x[1]}</small></span><span class="dose">${x[2]} kcal</span></label>`}).join('');
- const habs=HAB.map(h=>`<label class="row"><input type="checkbox" data-h="${h[0]}" ${d.h[h[0]]?'checked':''}><span class="box"></span><span class="txt"><b>${h[0]==='adim'?pick(h[1],w)+'+ adım':h[1]}</b>${h[0]==='adim'?'<small>Öğle arası 15 dk yürüyüş ≈ 1.800 adım.</small>':h[0]==='uyku'?'<small>23:00 yatakta, ekran kapalı.</small>':''}</span><span></span></label>`).join('');
+ const habs=HAB.map(h=>`<label class="row"><input type="checkbox" data-h="${h[0]}" ${d.h[h[0]]?'checked':''}><span class="box"></span><span class="txt"><b>${h[0]==='adim'?(we?'11.500':'10.000')+'+ adım':h[1]}</b>${h[0]==='adim'?(we?'<small>Koşu ya da yürüyüş seansı + gün içinde hareket.</small>':'<small>Öğle arası 15 dk yürüyüş + eve dönerken bir durak önce in ≈ 3.500 adım.</small>'):h[0]==='uyku'?'<small>23:00 yatakta, ekran kapalı.</small>':''}</span><span></span></label>`).join('');
  const p=Math.round(pct(i)*100),tot=pl.am.m[w]+(pl.pm?pl.pm.m[w]:0);
- const sub=pl.pm?`Sabah ${pl.am.m[w]} dk + akşam 21:00'de ${pl.pm.m[w]} dk`:`Hafta sonu: tek seans, ${pl.am.m[w]} dk, dışarıda`;
+ const sub=pl.pm?`Sabah ${pl.am.m[w]} dk + akşam 20:30'da ${pl.pm.m[w]} dk`:`Hafta sonu: tek seans, ${pl.am.m[w]} dk, dışarıda`;
  return`<section class="band"><div class="wrap">
   <div class="dnav"><button class="ib" data-act="prev" aria-label="Önceki gün" ${i<=1?'disabled':''}>‹</button>
    <div><div class="dno cd">Gün ${i}<span>/21</span></div><div class="ddate">${fmt(f.date)} · Hafta ${w+1}, ${WK[w]}</div>${pill}</div>
@@ -282,7 +284,7 @@ function vToday(){
  <div class="wrap grid2">
   <div>${sess('am',we?'Sabah, dışarıda':'Sabah · en fazla 35 dk',we?'Koşudan önce yarım muz ya da 1 bardak süt yeterli; dönüşte brunch.':'Aç karnına: uyanınca 1 bardak su, istersen şekersiz kahve. Başın dönerse 1 bardak ayran iç. Sonra duş ve çıkış.')}
    ${tm}
-   ${sess('pm','Akşam · 21:00','Yemekten ~2 saat sonra. 21:45\'te bitir; gece yüksek yoğunluk yok, uykunu bozmasın.')}</div>
+   ${sess('pm','Akşam · 20:30','Eve gelince üstünü değiştir ve hemen başla; yemek antrenmandan sonra. 17:00\'deki ara öğün enerjini verir. 21:10\'da bitir.')}</div>
   <div>
    <section class="card"><h2>Bugünün beslenmesi</h2><p class="sub">${we?'Hafta sonu':'Kahvaltı yok; ilk öğün öğlen'} · yaklaşık ${MENU[f.g].reduce((a,m)=>a+ML[m][2],0).toLocaleString('tr-TR')} kcal</p>${meals}</section>
    <section class="card"><h2>Alışkanlıklar</h2>${habs}</section>
@@ -295,8 +297,8 @@ function vProg(){
  const c=curDay();
  const rows=[0,1,2].map(wk=>{const st=info(wk*7+1).g;const hd=Array.from({length:7},(_,k)=>`<span>${DAYS[(st+k)%7].slice(0,3)}</span>`).join('');
   return`<h3>Hafta ${wk+1} · ${WK[wk]}</h3><div class="wd">${hd}</div><div class="pg">${Array.from({length:7},(_,k)=>{const i=wk*7+k+1,f=info(i),p=pct(i);return`<button class="tile ${p>=1?'d':''} ${i===c?'t':''}" data-act="open" data-i="${i}" aria-label="Gün ${i}: ${f.plan.t}"><span class="fl" style="--f:${p>=1?0:Math.round(p*100)}%"></span><span class="n">${i}</span><span class="l">${f.plan.sh}</span></button>`}).join('')}</div>`}).join('');
- const pat=[1,2,3,4,5,6,0].map(g=>{const pl=P[MAP[g]];return`<div class="ml"><span class="s">${DAYS[g]}</span><b>${pl.t}</b><span class="k">${pl.am.m[0]}${pl.pm?' + '+pl.pm.m[0]:''} dk</span><small>Sabah: ${pl.am.t}${pl.pm?' · 21:00: '+pl.pm.t:''}</small></div>`}).join('');
- return`<section class="band"><div class="wrap"><h1>21 günlük plan</h1><p class="lead">Hafta içi sabah en fazla 35 dakika kardiyo, akşam 21:00'de güç ya da mobilite. Hafta sonu tek seans, dışarıda. Her hafta set, süre ve tekrar biraz artar. Başlangıç: ${fmt(S.start,{day:'numeric',month:'long',weekday:'long'})}.</p>
+ const pat=[1,2,3,4,5,6,0].map(g=>{const pl=P[MAP[g]];return`<div class="ml"><span class="s">${DAYS[g]}</span><b>${pl.t}</b><span class="k">${pl.am.m[0]}${pl.pm?' + '+pl.pm.m[0]:''} dk</span><small>Sabah: ${pl.am.t}${pl.pm?' · 20:30: '+pl.pm.t:''}</small></div>`}).join('');
+ return`<section class="band"><div class="wrap"><h1>21 günlük plan</h1><p class="lead">Hafta içi sabah en fazla 35 dakika kardiyo, akşam 20:30'da, yemekten önce güç ya da mobilite. Hafta sonu tek seans, dışarıda. Her hafta set, süre ve tekrar biraz artar. Başlangıç: ${fmt(S.start,{day:'numeric',month:'long',weekday:'long'})}.</p>
   <div class="phases">${WK.map((x,k)=>`<div><b class="cd">Hafta ${k+1}</b><span>${x}</span><small>${['Formu öğren, alışkanlığı kur.','Set, tekrar ve süre artar.','En yüksek hacim; ilerlemeyi gör.'][k]}</small></div>`).join('')}</div></div></section>
  <div class="wrap grid2">
   <section class="card"><h2>Günler</h2><p class="sub">Bir güne dokun, o günün antrenmanını aç. Dolgu, günün tamamlanma oranı.</p>${rows}<p class="note" style="margin-top:12px">Alt: alt vücut · İnt.: bisiklet interval · Üst: üst vücut · Z2: zone 2 + mobilite · Tüm: tüm vücut devresi · Koşu: yürü-koş · Yürü: uzun yürüyüş</p></section>
@@ -307,7 +309,7 @@ function vProg(){
     <li><b>Zone 2:</b> cümle kurabildiğin tempo. Yağ yakımının ana motoru bu.</li>
     <li><b>Ağrı mı yorgunluk mu:</b> kas yanması normal; eklemde keskin ağrı varsa o hareketi bırak.</li>
     <li><b>Kaçırılan gün:</b> ertesi gün kaldığın yerden devam et; iki günü bire sıkıştırma.</li>
-    <li><b>Akşam 21:00:</b> güç ve mobilite akşama, yüksek nabız sabaha. 21:45'te bitir ki 23:00'te uyuyabilesin.</li>
+    <li><b>Akşam 20:30:</b> eve gelince hemen başla, yemek sonra. Güç ve mobilite akşama, yüksek nabız sabaha.</li>
     <li><b>2 kg hafif kalınca:</b> tempoyu yavaşlat (3 sn iniş), tekrarı artır ya da bandı katla.</li>
    </ul></section></div></div>
  <div class="wrap"><section class="card"><h2>Programı güçlendirecek ekler</h2><p class="sub">Elindekilerle program işler; bunlar sonucu hızlandırır. Önem sırasına göre:</p><ol class="eq">
@@ -322,7 +324,7 @@ function vProg(){
  </ol><p class="note">Tansiyon, kalp ya da eklem şikâyetin varsa interval ve koşu öncesi bir doktora danış.</p></section></div>`;
 }
 
-function tgt(){const w=lastW(),bmr=10*w+6.25*S.h-5*S.age+5,tdee=bmr*1.4,kc=Math.round((tdee-700)/50)*50,p=150,f=Math.round(w*.7/5)*5,c=Math.round((kc-p*4-f*9)/4/5)*5;return{w,bmr,tdee,kc,p,f,c}}
+function tgt(){const w=lastW(),bmr=10*w+6.25*S.h-5*S.age+5,tdee=bmr*1.4,kc=Math.round((tdee-900)/50)*50,p=140,f=Math.round(w*.7/5)*5,c=Math.round((kc-p*4-f*9)/4/5)*5;return{w,bmr,tdee,kc,p,f,c}}
 function vFood(){
  const t=tgt(),g=parse(TODAY).getDay();
  const mac=[['Protein',t.p,4],['Yağ',t.f,9],['Karbonhidrat',t.c,4]].map(m=>`<div class="mac"><span>${m[0]}</span><span class="bar"><i style="width:${Math.round(m[1]*m[2]/t.kc*100)}%"></i></span><span>${m[1]} g</span></div>`).join('');
@@ -330,14 +332,14 @@ function vFood(){
   return`<section class="card ${d===g?'t':''}"><h2>${DAYS[d]}${d===g?' · bugün':''}</h2>${ms.map((m,i)=>`<div class="ml"><span class="s">${SL(d)[i]}</span><b>${ML[m][0]}</b><span class="k">${ML[m][2]} kcal · ${ML[m][3]} g P</span><small>${ML[m][1]}</small></div>`).join('')}<div class="tot"><span>Toplam</span><span>${tk.toLocaleString('tr-TR')} kcal · ${tp} g protein</span></div></section>`}).join('');
  return`<section class="band"><div class="wrap"><p class="lead">Günlük hedef</p><div class="kc cd">${t.kc.toLocaleString('tr-TR')}<span>kcal</span></div>
   <div class="macs">${mac}</div>
-  <p class="lead" style="margin-top:14px">Güncel kilon ${nf(t.w)} kg ile hesaplandı: dinlenme harcaman ≈ ${Math.round(t.bmr).toLocaleString('tr-TR')} kcal, günlük toplam ≈ ${Math.round(t.tdee/10)*10} kcal. Günde ~700 kcal açık, haftada yaklaşık 0,6–0,8 kg. Kilo düştükçe hedef kendini günceller.</p></div></section>
+  <p class="lead" style="margin-top:14px">Güncel kilon ${nf(t.w)} kg ile hesaplandı: dinlenme harcaman ≈ ${Math.round(t.bmr).toLocaleString('tr-TR')} kcal, günlük toplam ≈ ${Math.round(t.tdee/10)*10} kcal. Günde ~900 kcal açık; 10.000 adımla birlikte haftada yaklaşık 1 kg. Kilo düştükçe hedef kendini günceller.</p></div></section>
  <div class="wrap grid2" style="padding-bottom:0">
   <section class="card"><h2>Temel kurallar</h2><ul class="ls">
    <li><b>Su:</b> günde 3 litre; antrenman günü +0,5 litre.</li>
    <li><b>Sıvı kalori yok:</b> şekerli içecek, meyve suyu ve alkol 21 gün dışarıda. Çay ve kahve şekersiz.</li>
    <li><b>Her öğünde protein:</b> avuç içi kadar et, tavuk, balık, yumurta, lor ya da yoğurt.</li>
    <li><b>Yağı ölç:</b> tencereye göz kararı değil, tatlı kaşığıyla.</li>
-   <li><b>Kahvaltı yok:</b> sabah antrenmanı aç karnına, ilk öğün öğlen. Akşam yemeği 19:00, antrenman 21:00, sonrasında küçük protein öğünü.</li><li><b>Gece aç kalırsan:</b> antrenman sonrası öğünü değiştirme; yanına salatalık ya da 1 bardak ayran ekle.</li>
+   <li><b>Kahvaltı yok:</b> sabah antrenmanı aç karnına, ilk öğün öğlen. 17:00'deki ara öğün akşam antrenmanının yakıtı; akşam yemeği 21:10'da, antrenmandan hemen sonra.</li><li><b>Yemek sonrası:</b> akşam yemeği geç olduğu için yatana kadar başka bir şey yeme; yattığında yemekten ~2 saat geçmiş olsun.</li>
    <li><b>Açsan:</b> salatalık, domates, 1 meyve ya da 1 kase yoğurt ekle; ekmeği artırma.</li>
   </ul></section>
   <div><section class="card"><h2>İşte öğle yemeği</h2><p>Menüdeki yemek yoksa tabak kuralı: <b>yarısı</b> sebze ya da salata, <b>çeyreği</b> protein, <b>çeyreği</b> pilav, bulgur ya da 1 dilim ekmek. Hamur işi, kızartma ve tatlıyı geç; yanına ayran ya da cacık al.</p></section>
@@ -350,10 +352,10 @@ function vKilo(){
  const a=ws(),L=a[a.length-1],ch=L?L.kg-firstW():0;
  const wk=a.filter(x=>diff(x.d,TODAY)<7&&diff(x.d,TODAY)>=0),avg=wk.length?wk.reduce((s,x)=>s+x.kg,0)/wk.length:null;
  const bmi=L?L.kg/((S.h/100)**2):0;
- const proj=firstW()-0.7*3;
+ const proj=firstW()-1*3;
  const rows=[...a].reverse().map((x,k,arr)=>{const prev=arr[k+1];const dd=prev?x.kg-prev.kg:null;return`<tr><td>${fmt(x.d,{day:'numeric',month:'short',weekday:'short'})}</td><td>${nf(x.kg)} kg</td><td>${x.bel?nf(x.bel,0)+' cm':'–'}</td><td>${dd===null?'–':(dd>0?'+':'')+nf(dd)}</td><td><button class="x" data-act="wdel" data-d="${x.d}" aria-label="Sil">×</button></td></tr>`}).join('');
  return`<section class="band"><div class="wrap"><p class="lead">Son ölçüm${L?' · '+fmt(L.d,{day:'numeric',month:'long'}):''}</p><div class="bigw cd">${L?nf(L.kg):'–'}<span>kg</span></div>
-  <p class="lead">Başlangıçtan beri ${(ch>0?'+':'')+nf(ch)} kg. Hedef tempo haftada −0,7 kg; bu tempoda 21. günde ≈ ${nf(proj)} kg. Uzun vadeli hedefin ${nf(S.goal,0)} kg.</p></div></section>
+  <p class="lead">Başlangıçtan beri ${(ch>0?'+':'')+nf(ch)} kg. Hedef tempo haftada −1 kg; bu tempoda 21. günde ≈ ${nf(proj)} kg. Uzun vadeli hedefin ${nf(S.goal,0)} kg.</p></div></section>
  <div class="wrap" style="padding-block:22px">
   <section class="card"><h2>Yeni ölçüm</h2>
    <form id="wf" class="wf"><label class="f">Tarih<input id="wd" type="date" value="${TODAY}" max="${TODAY}"></label><label class="f">Kilo (kg)<input id="wk" type="number" inputmode="decimal" step="0.1" min="40" max="250" required></label><label class="f">Bel (cm, isteğe bağlı)<input id="wb" type="number" inputmode="decimal" step="0.5" min="50" max="200"></label><button class="btn hot">Kaydet</button></form>
@@ -374,7 +376,7 @@ function drawChart(){
  const s=$('#wchart');if(!s)return;const W=s.clientWidth,H=s.clientHeight;if(!W||!H)return;
  const a=ws();if(!a.length){s.innerHTML='';return}
  const x0=a[0].d<S.start?a[0].d:S.start,end=add(S.start,20),x1=a[a.length-1].d>end?a[a.length-1].d:end;
- const base=firstW(),tEnd=base-0.7*20/7;
+ const base=firstW(),tEnd=base-1*20/7;
  const vals=a.map(x=>x.kg).concat([base,tEnd]);let lo=Math.floor(Math.min(...vals)-.5),hi=Math.ceil(Math.max(...vals)+.5);if(hi-lo<4)hi=lo+4;
  const m={l:38,r:16,t:14,b:28},iw=W-m.l-m.r,ih=H-m.t-m.b,span=Math.max(1,diff(x0,x1));
  const X=d=>m.l+diff(x0,d)/span*iw,Y=v=>m.t+(hi-v)/(hi-lo)*ih;
