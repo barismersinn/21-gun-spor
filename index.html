@@ -217,15 +217,17 @@ I3:['Yumurta tabağı','2 haşlanmış yumurta, 1 dilim tam buğday ekmek, 30 g 
 I4:['Lor + meyve','150 g lor, 2 tam buğday galeta, 1 meyve, 1 bardak ayran',400,25],
 A1:['Yoğurt + meyve','200 g süzme yoğurt, 1 elma',260,18],
 A3:['Yumurta + meyve','2 haşlanmış yumurta, 1 meyve, 1 ayran',290,18],
-D1:['Fırın balık','200 g levrek, çipura ya da somon; fırın sebze; 4 yemek kaşığı bulgur; 150 g yoğurt',730,48],
-D2:['Tavuk sote','200 g tavuk, biber-mantar, 1 tatlı kaşığı yağ; 4 yemek kaşığı bulgur; 150 g yoğurt; salata',690,56],
-D3:['Kıymalı sebze','Ispanak, kabak ya da taze fasulye + 180 g yağsız kıyma; cacık; 2 dilim ekmek',740,48],
-D4:['Çorba + ızgara tavuk','1 kase mercimek çorbası, 150 g ızgara tavuk ya da hindi, 4 yemek kaşığı bulgur, salata',690,60],
-D5:['Esnek akşam','Dışarıda ya da ailece: tek tabak, ızgara + salata, 1 dilim ekmek, tatlı yerine meyve',700,40],
+D1:['Izgara balık','200 g somon, levrek ya da çipura (ızgara ya da fırın), 4 yemek kaşığı bulgur, 150 g yoğurt, istersen domates-salatalık',700,48],
+D2:['Izgara tavuk','200 g tavuk göğsü ya da but (1 tatlı kaşığı yağla ızgara/tava), 5 yemek kaşığı bulgur, 150 g yoğurt, istersen domates-salatalık',690,58],
+D3:['Et sote','200 g yağsız dana kuşbaşı, soğan-biber, 1 tatlı kaşığı yağ; 4 yemek kaşığı bulgur; cacık; 1 dilim ekmek',720,55],
+D4:['Çorba + ızgara tavuk','1 kase mercimek çorbası, 150 g ızgara tavuk ya da hindi, 4 yemek kaşığı bulgur, istersen domates-salatalık',690,60],
+D5:['Esnek akşam','Dışarıda ya da ailece: tek tabak ızgara (et, tavuk ya da köfte), 1 dilim ekmek, tatlı yerine meyve',700,40],
+D6:['Fırın tavuk + patates','250 g derisiz tavuk but, 250 g fırın patates (1 tatlı kaşığı yağ, baharat), cacık',650,58],
+D8:['Ton balıklı makarna','80 g tam buğday makarna (kuru), 1 kutu su içinde ton balığı, 150 g yoğurtlu sos, domates, 1 tatlı kaşığı zeytinyağı',580,46],
 S2:['Süzme yoğurt','250 g süzme yoğurt, tarçın',230,22],
 B1:['Menemen brunch','3 yumurta + 2 yumurta akı, 2 dilim tam buğday ekmek, 60 g light beyaz peynir, 5 zeytin, domates-salatalık',650,46],
 B2:['Yumurta + yulaf','3 haşlanmış yumurta, 50 g yulaf + 200 ml süt + tarçın, 1 dilim ekmek, yeşillik',650,40]};
-const MENU=[['B2','A3','D5','S2'],['O1','I1','D2'],['O2','I3','D4'],['O3','I1','D1'],['O4','I1','D3'],['O5','I4','D2'],['B1','A1','D1','S2']];
+const MENU=[['B2','A3','D5','S2'],['O1','I1','D2'],['O2','I3','D4'],['O3','I1','D1'],['O4','I1','D3'],['O5','I1','D6'],['B1','A1','D8','S2']];
 const SL=g=>g===6?['Koşu sonrası brunch · 11:00','İkindi · 16:00','Akşam · 19:30','Gece, açsan · 22:00']:g===0?['Yürüyüş sonrası brunch · 11:00','İkindi · 16:00','Akşam · 19:30','Gece, açsan · 22:00']:['Öğle · 12:30','İkindi, antrenman enerjisi · 17:00','Akşam, antrenmandan sonra · 21:10'];
 const HAB=[['su','3 litre su'],['adim','10.000'],['uyku','7+ saat uyku']];
 
@@ -340,10 +342,12 @@ function vFood(){
    <li><b>Her öğünde protein:</b> avuç içi kadar et, tavuk, balık, yumurta, lor ya da yoğurt.</li>
    <li><b>Yağı ölç:</b> tencereye göz kararı değil, tatlı kaşığıyla.</li>
    <li><b>Kahvaltı yok:</b> sabah antrenmanı aç karnına, ilk öğün öğlen. 17:00'deki ara öğün akşam antrenmanının yakıtı; akşam yemeği 21:10'da, antrenmandan hemen sonra.</li><li><b>Yemek sonrası:</b> akşam yemeği geç olduğu için yatana kadar başka bir şey yeme; yattığında yemekten ~2 saat geçmiş olsun.</li>
+   <li><b>Lif:</b> pişmiş sebze yemediğin için lifi meyve, bulgur, baklagil ve domates-salatalıktan al; günde 2 meyve.</li>
+   <li><b>Zaman kazan:</b> Pazar günü 1 kg tavuğu marine edip fırınla, 3 günlük bulgur pilavı yap; akşamları sadece ısıtılır.</li>
    <li><b>Açsan:</b> salatalık, domates, 1 meyve ya da 1 kase yoğurt ekle; ekmeği artırma.</li>
   </ul></section>
   <div><section class="card"><h2>İşte öğle yemeği</h2><p>Menüdeki yemek yoksa tabak kuralı: <b>yarısı</b> sebze ya da salata, <b>çeyreği</b> protein, <b>çeyreği</b> pilav, bulgur ya da 1 dilim ekmek. Hamur işi, kızartma ve tatlıyı geç; yanına ayran ya da cacık al.</p></section>
-  <section class="card"><h2>Alışveriş listesi</h2><p>Tavuk göğsü, yağsız kıyma, balık, 30'lu yumurta, lor, light beyaz peynir, yoğurt ve süzme yoğurt, kefir, ayran, süt, yulaf, bulgur, tam buğday ekmek ve lavaş, kuru fasulye ve nohut, su içinde ton balığı, mevsim sebzesi, elma ve muz, badem-ceviz-fındık, zeytinyağı.</p></section></div>
+  <section class="card"><h2>Alışveriş listesi</h2><p>Tavuk göğsü ve but, yağsız kıyma ve dana kuşbaşı, balık, tam buğday makarna, patates, 30'lu yumurta, lor, light beyaz peynir, yoğurt ve süzme yoğurt, kefir, ayran, süt, yulaf, bulgur, tam buğday ekmek ve lavaş, kuru fasulye ve nohut, su içinde ton balığı, mevsim sebzesi, elma ve muz, badem-ceviz-fındık, zeytinyağı.</p></section></div>
  </div>
  <div class="wrap"><h2 style="margin-top:8px">Haftalık menü</h2><p class="note">Her hafta aynı menü tekrar eder. Değerler yaklaşık; aynı öğün grubundaki yemekleri günler arasında değiştirebilirsin.</p><div class="menu">${cards}</div></div>`;
 }
